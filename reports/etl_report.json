@@ -1,0 +1,246 @@
+{
+  "datasets_processed": [
+    "customers",
+    "transactions",
+    "interactions",
+    "campaigns",
+    "reviews",
+    "support_tickets"
+  ],
+  "master_table_rows": 5000,
+  "master_table_columns": 28,
+  "per_dataset_report": {
+    "customers": {
+      "dataset": "customers",
+      "initial_rows": 5000,
+      "initial_columns": 12,
+      "duplicates_removed": 0,
+      "final_rows": 5000,
+      "final_columns": 13,
+      "missing_before": {
+        "full_name": 106,
+        "age": 186,
+        "gender": 112,
+        "email": 111,
+        "phone": 186,
+        "street_address": 177,
+        "city": 97,
+        "state": 93,
+        "zip_code": 96,
+        "preferred_channel": 114
+      },
+      "missing_after": {},
+      "columns": [
+        "customer_id",
+        "full_name",
+        "age",
+        "gender",
+        "email",
+        "phone",
+        "street_address",
+        "city",
+        "state",
+        "zip_code",
+        "registration_date",
+        "preferred_channel",
+        "age_group"
+      ]
+    },
+    "transactions": {
+      "dataset": "transactions",
+      "initial_rows": 32295,
+      "initial_columns": 10,
+      "duplicates_removed": 0,
+      "outlier_caps": {
+        "quantity": {
+          "lower_cap": -0.5,
+          "upper_cap": 3.5,
+          "values_capped": 287
+        },
+        "price": {
+          "lower_cap": -840.2050000000002,
+          "upper_cap": 1887.515,
+          "values_capped": 1614
+        },
+        "discount_applied": {
+          "lower_cap": -7.5,
+          "upper_cap": 12.5,
+          "values_capped": 6358
+        }
+      },
+      "final_rows": 32295,
+      "final_columns": 15,
+      "missing_before": {
+        "product_name": 678,
+        "product_category": 686,
+        "quantity": 644,
+        "price": 622,
+        "store_location": 644,
+        "payment_method": 660,
+        "discount_applied": 611
+      },
+      "missing_after": {},
+      "columns": [
+        "transaction_id",
+        "customer_id",
+        "product_name",
+        "product_category",
+        "quantity",
+        "price",
+        "transaction_date",
+        "store_location",
+        "payment_method",
+        "discount_applied",
+        "gross_sales",
+        "net_sales",
+        "transaction_year",
+        "transaction_month",
+        "transaction_quarter"
+      ]
+    },
+    "interactions": {
+      "dataset": "interactions",
+      "initial_rows": 100000,
+      "initial_columns": 8,
+      "duplicates_removed": 0,
+      "outlier_caps": {
+        "duration": {
+          "lower_cap": -178.0,
+          "upper_cap": 318.0,
+          "values_capped": 0
+        }
+      },
+      "final_rows": 100000,
+      "final_columns": 9,
+      "missing_before": {
+        "channel": 2002,
+        "interaction_type": 2022,
+        "duration": 1963,
+        "page_or_product": 1927
+      },
+      "missing_after": {},
+      "columns": [
+        "interaction_id",
+        "customer_id",
+        "channel",
+        "interaction_type",
+        "interaction_date",
+        "duration",
+        "page_or_product",
+        "session_id",
+        "interaction_month"
+      ]
+    },
+    "campaigns": {
+      "dataset": "campaigns",
+      "initial_rows": 200,
+      "initial_columns": 12,
+      "duplicates_removed": 0,
+      "final_rows": 200,
+      "final_columns": 16,
+      "missing_before": {
+        "campaign_name": 6,
+        "campaign_type": 6,
+        "budget": 4,
+        "impressions": 4,
+        "clicks": 10,
+        "conversions": 7,
+        "conversion_rate": 2,
+        "roi": 3
+      },
+      "missing_after": {},
+      "columns": [
+        "campaign_id",
+        "campaign_name",
+        "campaign_type",
+        "start_date",
+        "end_date",
+        "target_segment",
+        "budget",
+        "impressions",
+        "clicks",
+        "conversions",
+        "conversion_rate",
+        "roi",
+        "campaign_duration_days",
+        "ctr",
+        "click_to_conversion_rate",
+        "cost_per_conversion"
+      ]
+    },
+    "reviews": {
+      "dataset": "reviews",
+      "initial_rows": 1000,
+      "initial_columns": 10,
+      "duplicates_removed": 0,
+      "final_rows": 1000,
+      "final_columns": 11,
+      "missing_before": {
+        "product_name": 24,
+        "product_category": 19,
+        "full_name": 19
+      },
+      "missing_after": {},
+      "columns": [
+        "review_id",
+        "customer_id",
+        "product_name",
+        "product_category",
+        "full_name",
+        "transaction_date",
+        "review_date",
+        "rating",
+        "review_title",
+        "review_text",
+        "review_lag_days"
+      ]
+    },
+    "support_tickets": {
+      "dataset": "support_tickets",
+      "initial_rows": 3000,
+      "initial_columns": 10,
+      "duplicates_removed": 0,
+      "outlier_caps": {
+        "resolution_time_hours": {
+          "lower_cap": -26.0,
+          "upper_cap": 110.0,
+          "values_capped": 110
+        }
+      },
+      "final_rows": 3000,
+      "final_columns": 11,
+      "missing_before": {
+        "issue_category": 71,
+        "priority": 60,
+        "resolution_date": 244,
+        "resolution_status": 57,
+        "resolution_time_hours": 299,
+        "customer_satisfaction_score": 341,
+        "notes": 61
+      },
+      "missing_after": {
+        "resolution_date": 244,
+        "resolution_lag_hours_calc": 244
+      },
+      "columns": [
+        "ticket_id",
+        "customer_id",
+        "issue_category",
+        "priority",
+        "submission_date",
+        "resolution_date",
+        "resolution_status",
+        "resolution_time_hours",
+        "customer_satisfaction_score",
+        "notes",
+        "resolution_lag_hours_calc"
+      ]
+    }
+  },
+  "assumptions": [
+    "Missing categorical values filled with 'Unknown' except preferred_channel defaulted to 'Email'.",
+    "Missing numeric values imputed with median unless zero is more appropriate for counts/discounts.",
+    "Outliers capped using IQR method instead of deleted to preserve business records.",
+    "Negative or logically invalid numeric values clipped to zero or valid ranges."
+  ]
+}

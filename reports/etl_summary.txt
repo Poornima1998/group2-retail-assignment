@@ -1,0 +1,41 @@
+ETL SUMMARY
+============================================================
+Datasets processed: customers, transactions, interactions, campaigns, reviews, support_tickets
+Customer master table shape: (5000, 28)
+
+CUSTOMERS:
+  Initial rows/cols: 5000 / 12
+  Final rows/cols:   5000 / 13
+  Duplicates removed: 0
+  Missing before: {'full_name': 106, 'age': 186, 'gender': 112, 'email': 111, 'phone': 186, 'street_address': 177, 'city': 97, 'state': 93, 'zip_code': 96, 'preferred_channel': 114}
+
+TRANSACTIONS:
+  Initial rows/cols: 32295 / 10
+  Final rows/cols:   32295 / 15
+  Duplicates removed: 0
+  Missing before: {'product_name': 678, 'product_category': 686, 'quantity': 644, 'price': 622, 'store_location': 644, 'payment_method': 660, 'discount_applied': 611}
+
+INTERACTIONS:
+  Initial rows/cols: 100000 / 8
+  Final rows/cols:   100000 / 9
+  Duplicates removed: 0
+  Missing before: {'channel': 2002, 'interaction_type': 2022, 'duration': 1963, 'page_or_product': 1927}
+
+CAMPAIGNS:
+  Initial rows/cols: 200 / 12
+  Final rows/cols:   200 / 16
+  Duplicates removed: 0
+  Missing before: {'campaign_name': 6, 'campaign_type': 6, 'budget': 4, 'impressions': 4, 'clicks': 10, 'conversions': 7, 'conversion_rate': 2, 'roi': 3}
+
+REVIEWS:
+  Initial rows/cols: 1000 / 10
+  Final rows/cols:   1000 / 11
+  Duplicates removed: 0
+  Missing before: {'product_name': 24, 'product_category': 19, 'full_name': 19}
+
+SUPPORT_TICKETS:
+  Initial rows/cols: 3000 / 10
+  Final rows/cols:   3000 / 11
+  Duplicates removed: 0
+  Missing before: {'issue_category': 71, 'priority': 60, 'resolution_date': 244, 'resolution_status': 57, 'resolution_time_hours': 299, 'customer_satisfaction_score': 341, 'notes': 61}
+  Missing after: {'resolution_date': 244, 'resolution_lag_hours_calc': 244}
