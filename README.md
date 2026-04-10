@@ -49,7 +49,7 @@ Detailed data analysis with descriptive statistics with insightful visualization
 python scripts/eda.py
 ```
 
-## Tasks Completed
+## Analysis based on
 - focused on sales trends, payment behavior, interaction channels, campaign performance, review ratings, and support operations.
 
 ## Main Files
