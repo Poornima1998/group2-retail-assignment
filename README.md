@@ -39,3 +39,34 @@ Running the ETL script generates:
 - Pandas
 - NumPy
 - Jupyter Notebook
+
+## Member 2 - Exploratory Data Analysis
+
+Detailed data analysis with descriptive statistics with insightful visualization
+
+## How to Run
+```bash
+python scripts/eda.py
+```
+
+## Tasks Completed
+- focused on sales trends, payment behavior, interaction channels, campaign performance, review ratings, and support operations.
+
+## Main Files
+- `scripts/eda.py` - EDA script
+- `notebooks/Etl_Analysis.ipynb` - EDA notebook
+- `reports/eda_summary.txt` - ETL summary
+  
+## Outputs
+Running the EDA script generates:
+- descriptive tables in `outputs/tables/`
+- visualizations in `outputs/plots/`
+- insight reports in `reports/insights_summary.txt`
+
+## Tools Used
+- Python
+- Pandas
+- NumPy
+- matplotlib
+- Jupyter Notebook
+
