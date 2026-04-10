@@ -40,7 +40,7 @@ Running the ETL script generates:
 - NumPy
 - Jupyter Notebook
 
-## Member 2 - Exploratory Data Analysis
+# Member 2 - Exploratory Data Analysis
 
 Detailed data analysis with descriptive statistics with insightful visualization
 
