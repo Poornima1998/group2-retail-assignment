@@ -1,0 +1,23 @@
+EDA SUMMARY
+======================================================================
+Customers: 5,000
+Transactions: 32,295
+Interactions: 100,000
+Campaigns: 200
+Reviews: 1,000
+Support tickets: 3,000
+
+Total net sales: 24,688,239.41
+Average order value: 764.46
+Top category by sales: Furniture (5458863.12)
+Most used payment method: Credit Card (10907)
+Most common interaction channel: Website (55724)
+Best campaign type by avg ROI: Search Engine Marketing (8560.18)
+Most common support issue: Shipping (436)
+Highest rated category: Tablets (4.47)
+
+Operational insights:
+- Focus sales planning around the highest-grossing product categories.
+- The dominant payment method and interaction channel should receive priority in UX and marketing optimization.
+- Campaign types with superior ROI and lower cost per conversion should receive proportionally larger budgets.
+- Support issue categories with heavy ticket volumes should be addressed through process improvements and proactive communication.
