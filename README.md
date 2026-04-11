@@ -70,3 +70,40 @@ Running the EDA script generates:
 - matplotlib
 - Jupyter Notebook
 
+# Member 3 - Clustering Analysis
+
+Implement machine learning technique to segment the customer base into distinct behaviour profiles, actionable insights for efficiency and targeted marketing.
+
+## Tasks Completed.
+- Feature Engineering & Selection
+- Data Normalization
+- Data Preprocessing
+- Dimensionality Reduction
+- Cluster Profiling
+- Automated Reporting
+
+## How to Run
+```bash
+python scripts/cluster_analysis.py
+```
+## Main Files
+## Main Files
+- `scripts/cluster_analysis.py` - Cluster analysis script
+- `notebooks/cluster_analysis.ipynb` - Cluster analysis notebook
+
+  
+## Outputs
+Running the cluster analysis script generates:
+- `data/processed/customer_clustered_data.csv` - Segmented data
+- `reports/cluster_analysis_summary.txt` - Cluster analysis summary
+- `reports/cluster_profiles_summary.csv` - Cluster analysis summary data
+- `outputs/plots/` - All visulizations
+
+## Tools Used
+- Python
+- Pandas
+- NumPy
+- matplotlib
+- seaborn
+- scikit-learn
+- Jupyter Notebook
