@@ -107,3 +107,45 @@ Running the cluster analysis script generates:
 - seaborn
 - scikit-learn
 - Jupyter Notebook
+
+
+# Member 4 - Forecasting Analysis
+
+Implementation of time-series forecasting to predict future retail performance and provide actionable business insights.
+
+## My Role
+Member 4 - Time-Series Forecasting & Analysis
+
+## Tasks Completed
+- Extracted and processed monthly sales time-series data
+- Performed time-based Train-Test splitting (80/20)
+- Implemented a Baseline model using a 3-Month Moving Average
+- Developed an advanced forecasting model using Facebook Prophet
+- Evaluated model performance using MAE and RMSE metrics
+- Visualized actual vs. predicted sales trends
+- Documented forecasting results and business implications
+
+## How to Run
+# Ensure Prophet and Scikit-learn are installed
+pip install prophet scikit-learn
+python scripts/forecasting_analysis.py
+
+# Main Files
+-scripts/forecasting_analysis.py - Forecasting script
+-notebooks/forecasting_analysis.ipynb - Forecasting notebook
+-outputs/tables/monthly_sales_series.csv - Input time-series data
+
+# Outputs
+Running the forecasting script generates:
+
+-outputs/plots/forecast_comparison.png - Visual comparison of Actual vs. Predicted sales
+-outputs/tables/forecast_metrics_summary.csv - Model evaluation results (MAE, RMSE)
+-reports/forecasting_summary.md - Detailed analysis and business recommendations
+
+# Tools Used
+Python
+Pandas
+Prophet
+Scikit-learn
+Matplotlib
+Jupyter Notebook
